@@ -1,43 +1,78 @@
+/* 기본 폰트 & 배경 */
 body {
   font-family: Arial, sans-serif;
-  text-align: center;
   background-color: #f4f4f4;
   margin: 0;
   padding: 0;
 }
 
-nav ul {
-  list-style: none;
-  padding: 0;
+/* 섹션 전체 레이아웃 */
+#projects,
+#contact {
+  max-width: 760px;
+  margin: 40px auto;
+  padding: 0 20px;
 }
 
-nav ul li {
-  display: inline;
-  margin: 0 15px;
+/* 섹션 제목 */
+h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
 }
 
-nav ul li a {
-  color: white;
-  text-decoration: none;
-}
-
-section {
-  margin: 40px;
-  padding: 20px;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
+/* 프로젝트 카드 */
 .project {
-  margin-bottom: 20px;
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  text-align: left;
 }
 
+/* 프로젝트 제목 + 날짜 */
+.project h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  color: #222;
+  font-size: 20px;
+}
+
+.project .date {
+  font-size: 14px;
+  color: #777;
+  margin-left: 5px;
+}
+
+/* 프로젝트 설명 */
+.project p {
+  margin: 8px 0;
+  color: #444;
+  line-height: 1.5;
+}
+
+/* 링크 스타일 */
 a {
-  color: #007bff;
+  color: #0066cc;
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
+}
+
+/* Contact 섹션 */
+#contact p {
+  text-align: center;
+  font-size: 16px;
+  color: #444;
+}
+
+/* ChatGPT 문구 */
+.note {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+  text-align: center;
 }
