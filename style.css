@@ -1,4 +1,3 @@
-/* 기본 폰트 & 배경 */
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
@@ -6,22 +5,21 @@ body {
   padding: 0;
 }
 
-/* 섹션 전체 레이아웃 */
-#projects,
-#contact {
+/* Projects 섹션 자체는 백지처럼 */
+#projects {
   max-width: 760px;
   margin: 40px auto;
   padding: 0 20px;
+  background: none; /* ← 중요! 섹션 배경 제거 */
 }
 
-/* 섹션 제목 */
 h2 {
   text-align: center;
   margin-bottom: 25px;
   color: #333;
 }
 
-/* 프로젝트 카드 */
+/* 💥 여기! 원하는 카드 스타일 */
 .project {
   background-color: white;
   padding: 20px;
@@ -31,12 +29,9 @@ h2 {
   text-align: left;
 }
 
-/* 프로젝트 제목 + 날짜 */
 .project h3 {
   margin-top: 0;
-  margin-bottom: 8px;
   color: #222;
-  font-size: 20px;
 }
 
 .project .date {
@@ -45,14 +40,12 @@ h2 {
   margin-left: 5px;
 }
 
-/* 프로젝트 설명 */
 .project p {
   margin: 8px 0;
   color: #444;
   line-height: 1.5;
 }
 
-/* 링크 스타일 */
 a {
   color: #0066cc;
   text-decoration: none;
@@ -62,17 +55,12 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Contact 섹션 */
-#contact p {
-  text-align: center;
-  font-size: 16px;
-  color: #444;
-}
-
 /* ChatGPT 문구 */
 .note {
-  margin-top: 20px;
+  max-width: 760px;
+  margin: 20px auto 60px auto;
+  text-align: center;
   font-size: 14px;
   color: #666;
-  text-align: center;
+  padding: 0 20px;
 }
